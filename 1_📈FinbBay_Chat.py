@@ -369,7 +369,7 @@ if language_code=='en':
     #color_midpoint = np.average(market_data['price_change'], weights=market_data['market_cap'])           
     fig = px.treemap(market_data, path=['sector', 'symbol'], values='market_cap',
                  color='stock_price', hover_data=['sector', 'company_name', 'stock_price', 'market_cap'],
-                 color_continuous_scale='RdBu',
+                 color_continuous_scale='RdYlGn',
                  color_continuous_midpoint=np.average(market_data['stock_price'], weights=market_data['market_cap']))
 
     # Remove the 'id', 'parent', and 'label' from the hover tooltip for companies' symbols
