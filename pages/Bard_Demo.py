@@ -1,5 +1,3 @@
-
-
 import streamlit as st
 from bardapi import Bard
 import os
@@ -37,4 +35,4 @@ df = pd.concat([df, new_row], ignore_index=True)
 df = pd.concat([df, new_row1], ignore_index=True)
 
 # Print the dataframe
-st.write((df)
+st.write(df)
