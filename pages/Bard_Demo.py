@@ -38,4 +38,3 @@ df = pd.concat([df, new_row1], ignore_index=True)
 
 # Print the dataframe
 st.write((df)
-
